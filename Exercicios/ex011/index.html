@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mídias em HTML5</title>
+</head>
+<body>
+    <h1>Imagens Dinâmica</h1>
+    <p>Tente abrir esse imagens em varios dispositivos ou mude o tamanho do seu navegador</p>
+    <picture><!--1° abra com a tag picture-->
+        <source media="(max-width: 750px)" srcset="imagens/foto-p.png" type="image/png"><!--4° a tag source puxa a imagem reduzida a partir da delimitação da tela do dispositivo que nesse caso 700 pixel-->
+        <source media="(max-width: 1050px)" srcset="imagens/foto-m.png" type="image/png"><!--3° a tag source puxa a imagem reduzida a partir da delimitação da tela do dispositivo que nesse caso 1000 pixel-->
+        <img src="imagens/foto-g.png" alt="imagem flexivel"><!--2° a tag img introdus a imagem-->        
+    </picture>
+    <hr>
+    <h1>Reproduzindo Áudio</h1>
+    <p>Vamos reproduzir uma musica</p>
+    <audio preload="metadata" src="audio/musica-do-youtube.mp3"controls>
+    </audio>
+
+    <p>Vamos reproduzir um pod cast aqui</p>
+    <audio preload="metadata" controls loop>
+        <source src="audio/guanacast-33.mp3" type="audio/mpeg">
+    </audio>
+    <br>
+    <p>OU</p>
+    <br>
+    <a href="audio/guanacast-33.mp3">Baixe aqui</a>
+    <hr>
+
+
+</body>
+</html>
