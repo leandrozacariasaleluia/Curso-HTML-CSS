@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pseudo-Classes</title>
+    <style>
+        
+        div {
+            background-color: lightgray;
+            display: inline-block;
+            border: 1px solid black;
+            text-align: center;
+            height: 200px;
+            width: 200px;
+            margin: 30px;
+            padding: 20px;
+                      
+        }
+        div:hover {
+            background-color: yellow;
+            font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+        }
+        div#d0 {
+            background-color: unset;
+            font-family: none;
+        }
+        div#d0 >p{
+            display: none;
+        }
+        div#d0:hover >p {
+            display: block;
+        }
+
+    </style>
+</head>
+<body>
+    <div id="d0">D0
+        <p>Aqui tem um texto escondido</p>
+    </div>
+    <div id="d1">D1</div>
+    <div id="d2">D2</div>
+    <div id="d3">D3</div>
+</body>
+</html>
