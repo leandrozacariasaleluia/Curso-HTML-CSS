@@ -1,0 +1,23 @@
+@charset "utf-8";
+body{
+    font-family: Arial, Helvetica, sans-serif
+    font-weight: bolder;
+    font-size: 16px;
+    font-style: italic;
+    
+    /*Medidas Absolutas
+    cm nm in 'px' pc
+    
+    Medidas Relativas
+    'em' ex rem vw vh %
+    
+    usar px e em*/
+}
+h1, h2{
+    font: 'normal' 'normal' 33px 'cursive', 'sans-serif';
+    /*tem que ser na ordem 
+     font-style font-weight font-size font-family*/
+}
+h2{
+    text-decoration: underline;
+}
